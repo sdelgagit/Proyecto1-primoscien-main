@@ -1,0 +1,76 @@
+.clients{
+    font-family: $Font2;
+    padding: 215px 3.12rem;
+    background-color: $bgcolor1;
+    color: $fontcolor1;
+    &__title{
+        font-size: 50px;
+        margin-bottom: 55px;
+    }
+    &__box{
+        width: 45%;
+        margin: auto;
+        font-size: 24px;
+    }
+    &__txt{
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        padding-bottom: 45px;
+    }
+    &__brands{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 80%;
+        margin: auto;
+        align-items: center;
+        img{
+            max-width: 163px;
+            transition: transform .6s;
+            filter: grayscale(100%);            
+            &:hover{
+            transform: scale(1.2);
+            filter: grayscale(0%);            
+            }
+        }        
+    }
+}
+
+@media all and (max-width: 1200px){
+    .clients{
+        &__box{
+            width: 85%;
+        }
+    }
+}
+@media all and (max-width: 768px){
+    .clients{
+        padding: 100px 3.12rem;
+        &__title{
+            font-size: 33px;
+        }
+        &__box{
+            width: auto;
+            font-size: 19px; 
+        }
+    }    
+}
+
+@media all and (max-width: 576px){
+    .clients{
+        padding: 100px 20px;
+        text-align: center; 
+        &__txt{
+            width: 90%;
+            margin: auto;
+            margin-bottom: 45px;
+        }
+        &__brands{
+            width: 95%;
+            img{
+                max-width: 129px;
+            }
+        }
+    }
+}

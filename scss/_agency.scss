@@ -1,0 +1,98 @@
+.agency{
+    color: white;
+    background-color: $bgcolor1;
+    font-family: $Font3;
+    overflow: hidden;
+    &__blck-txt{
+        width: 89%;
+        display: flex;
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        div{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            div{
+                width: 100%;
+            }
+        }
+    }
+    &__phrase{
+        font-size: 110px;
+        color: $fontcolor2;
+        padding-top: 160px;
+        padding-bottom: 160px;
+    }
+    &__txt{
+        font-size: 22px;
+        color: $fontcolor1;
+    }
+    &__phrase2{
+        font-family: $Font2;
+        font-size: 110px;
+        color: $fontcolor2;
+        padding-top: 359px;
+        padding-bottom: 180px;
+        width: 92%;
+        margin: auto;
+        text-align: center;
+    }    
+    &__logo{
+        width: 49%;
+        max-width: 650px;
+        margin-top: 130px;
+    }
+}
+@media all and (max-width: 1200px){
+    .agency{
+        color: white;
+        &__phrase{
+            font-size: 90px;
+        }
+        &__txt{
+            font-size: 17px;
+            padding-bottom: 70px;
+        }        
+        &__phrase2{
+            font-size: 90px;
+            padding-top: 60px;
+            padding-bottom: 90px;
+        }
+    }
+}
+
+
+
+@media all and (max-width: 768px){
+    .agency{
+        &__blck-txt{
+            div{
+                width: 80%;
+                margin: 0px auto;
+            }
+        }
+        &__logo{
+            margin:0px auto;
+            width: 85%;
+            min-width: 210px;
+            max-height: 290px;            
+        }
+        &__txt{
+            padding-top: 20px;
+            padding-bottom: 70px;
+        }
+        &__phrase{
+            padding-top: 100px;
+            padding-bottom: 80px;
+            font-size: 60px;
+        }
+        &__phrase2{
+            font-size: 60px;
+            padding-top: 90px;
+            text-align: center;
+            width: 88%;
+            margin: auto;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+$Font1: "Quicksand", sans-serif;
+$Font2: 'Lato', sans-serif;
+$Font3: 'Open Sans', sans-serif;
+$fontcolor1: white;
+$fontcolor2: #fde101;
+$fontcolor3: black;
+$bgcolor1: #171717;
+
+/*contact stuff*/
+/* $Fweight2 is for weights for my second font Lato*/
+$Fweight2:(
+    "thin": 100,
+    "light": 300,
+    "medium": 400,
+    "bold": 700,
+    "black": 900
+);
+
+@each $w, $n in $Fweight2{
+    .Fweight2-#{$w}{
+        font-weight: $n;
+    }
+}

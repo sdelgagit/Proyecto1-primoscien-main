@@ -1,0 +1,52 @@
+.introc{
+    font-family: $Font2;
+    background-color: white;
+    padding: 255px 50px;
+    color: $fontcolor3;
+    &__blck{
+        width: 40%;
+        margin: auto;
+        text-align: center;
+    }
+    &__title{
+        font-size: 33px;
+        padding-bottom: 50px;
+    }
+    &__parag{
+        padding-bottom: 30px;
+        font-size: 18px;
+    }    
+}
+@media all and (max-width: 1200px){
+    .introc{
+        &__blck{
+            width: 70%;
+        }
+    }
+}
+@media all and (max-width: 768px){
+    .introc{
+        padding: 100px 24px;
+        &__blck{
+            width: 95%;
+        }
+        &__title{
+            font-size: 26px;
+        }
+    }
+}
+
+@keyframes MoveUpInitial {
+	to {
+		transform: translate3d(0,-105%,0);
+	}
+}
+
+@keyframes MoveUpEnd {
+	from {
+		transform: translate3d(0,100%,0);
+	}
+	to {
+		transform: translate3d(0,0,0);
+	}
+}
